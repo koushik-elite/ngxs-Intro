@@ -1,0 +1,14 @@
+<h3>Tutorials</h3>
+<div class="right" *ngIf="tutorials$">
+  <ul class="list">
+    
+    <li *ngFor="let tutorial of tutorials$ | async">
+      <span class="detail">
+      <img [src] = "tutorial.picture.medium" width="50" />
+      <span class="name">{{ tutorial.name.first}}</span>
+      </span>
+      <a class="close" (click)="delTutorial(tutorial.name.first)" >X</a>
+    </li>
+
+  </ul>
+</div>

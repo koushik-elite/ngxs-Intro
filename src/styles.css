@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+.header {
+    display: block;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+a.close {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid;
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    text-align: center;
+    line-height: 1.4;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: flex;
+    list-style: none;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    justify-items: flex-end;
+    padding-top: 3%;
+}
+app-create, app-read {
+    display: inline-block;
+}
+span.detail {
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: row;
+    flex-direction: row;
+    align-items: center;
+}
+ul.list {
+    border: 1px solid;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ul.list li:hover {
+    background-color: lightsalmon;
+}
+
+ul.list li:hover img {
+    
+    background-color: lightsalmon;
+    filter: hue-rotate(180deg);
+}
